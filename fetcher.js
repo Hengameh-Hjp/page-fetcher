@@ -7,7 +7,7 @@ request(address[0], (error, response, body) => {
     if (err) {
       return console.log(err);
     }
-    console.log('Length of data written is ' + body.length);
+    console.log(`Downloaded and saved ${body.length} bytes to ${address[1]}`);
   });
 });
 
